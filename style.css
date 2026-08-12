@@ -1,0 +1,105 @@
+/* COLORES DEL PROYECTO */
+:root {
+  --negro: #0e131a;
+  --dorado: #F2E9D8;
+  --blanco: #ffffff;
+  --gris: #f4f4f4;
+  --texto: #0e131a;
+}
+
+/* CONFIGURACIÓN GENERAL */
+body{
+  font-family: Nerko One, cursive;
+  color: var(--texto)
+}
+
+/* PORTADA */
+.hero {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.65),
+      rgba(0,0,0,.65)
+    ),
+    url("../img/servicio-1.jpg")
+    center/cover;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 800;
+  color: var(--dorado);
+}
+
+.hero .lead {
+  font-size: 1.5rem;
+}
+
+/* SECCIONES */
+.section {
+  padding: 70px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-weight: 800;
+  color: var(--negro);
+}
+
+/* TARJETAS */
+.service-card {
+  height: 100%;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+  transition: transform .2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* PRECIOS */
+.price {
+  color: var(--dorado);
+  font-weight: 800;
+}
+
+/* BOTÓN */
+.btn-warning {
+  background-color: var(--dorado);
+  border-color: var(--dorado);
+}
+
+.btn-warning:hover {
+  background-color: #a98312;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+/* IMÁGENES */
+img {
+  max-width: 100%;
+}
+
+.nerko-one-regular {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style:normal;
+}
+
+
